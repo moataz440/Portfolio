@@ -136,12 +136,6 @@ h1{font-size:clamp(58px,10vw,128px);font-weight:900;line-height:.88;letter-spaci
 .proj:hover .proj-arr{color:var(--cyan)}
 
 /* CERTS */
-.certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
-.cert{background:var(--card);padding:22px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:background .2s}
-.cert:hover{background:var(--card2)}
-.cert-name{font-size:13.5px;font-weight:500;color:var(--text);margin-bottom:5px;line-height:1.3}
-.cert-org{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.05em}
-.cert-yr{font-family:var(--mono);font-size:12px;color:var(--purple);letter-spacing:.1em;flex-shrink:0}
 
 /* CONTACT */
 #contact{background:var(--bg2)}
@@ -192,7 +186,6 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:24
   #hero{padding-top:110px}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
   .skills-grid{grid-template-columns:1fr 1fr}
-  .certs-grid{grid-template-columns:1fr}
   .proj{grid-template-columns:1fr;gap:12px}
   .proj-arr{display:none}
   .hero-code,.hero-hint{display:none}
@@ -217,7 +210,6 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:24
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#certs">Certs</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-hire" id="hireBtn">Hire Me</a>
@@ -258,13 +250,13 @@ OBJ    → Output</pre>
         <p>I'm a <strong>Computer Engineering student</strong> at the Arab Academy for Science, Technology & Maritime Transport (AAST), graduating <span class="hl">2027</span>. I build across the full spectrum — from low-level systems and compiler design to production web applications deployed on real infrastructure.</p>
         <p>My flagship project, the <strong>LRC Compiler</strong>, is a complete C++ frontend built in Python covering lexing, LR(1) parsing, semantic analysis, TAC generation, pseudo-assembly, object code, and AST interpretation — with a custom GUI. Most students never attempt this.</p>
         <p>On the web side, I've shipped production-grade apps: a <strong>coffee shop platform</strong> with Stripe payments, MongoDB Atlas, JWT refresh tokens, rate limiting, audit logs, and a Python analytics dashboard — and a <strong>real-time AI quiz platform</strong> used by actual university professors at AAST built with React, Vite, and Supabase.</p>
-        <p>Certified by <strong>Harvard</strong> (CS50 series), <strong>IBM</strong> (Full Stack), and <strong>Cisco</strong> (CCNA). Actively seeking a software engineering internship.</p>
+        <p>Experienced across the full stack and systems layer: IoT with <strong>ESP32/MQTT</strong>, data analysis, and hardware interfacing including <strong>3D printing</strong> and electronics. Actively seeking a software engineering internship.</p>
       </div>
       <div class="r d3">
         <div class="stat-grid">
-          <div class="stat"><div class="stat-n">8+</div><div class="stat-l">Projects</div></div>
+          <div class="stat"><div class="stat-n">10+</div><div class="stat-l">Projects</div></div>
           <div class="stat"><div class="stat-n">8+</div><div class="stat-l">Languages</div></div>
-          <div class="stat"><div class="stat-n">6</div><div class="stat-l">Certs</div></div>
+          <div class="stat"><div class="stat-n">3</div><div class="stat-l">Live Apps</div></div>
           <div class="stat"><div class="stat-n">2027</div><div class="stat-l">Graduation</div></div>
         </div>
         <div class="avail">
@@ -304,7 +296,7 @@ OBJ    → Output</pre>
       </div>
       <div class="sk">
         <div class="sk-name">CS Fundamentals</div>
-        <div class="tags"><span class="tag">Compiler Design</span><span class="tag">LR(1) Parsing</span><span class="tag">AST</span><span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">OOP</span><span class="tag">Networking</span><span class="tag">OS</span></div>
+        <div class="tags"><span class="tag">Compiler Design</span><span class="tag">LR(1) Parsing</span><span class="tag">AST</span><span class="tag">Data Structures</span><span class="tag">Algorithms</span><span class="tag">OOP</span><span class="tag">Design Patterns</span><span class="tag">Repository</span><span class="tag">Factory</span><span class="tag">Singleton</span><span class="tag">Strategy</span><span class="tag">Decorator</span><span class="tag">Dependency Injection</span><span class="tag">SOLID</span><span class="tag">Clean Architecture</span><span class="tag">Networking</span><span class="tag">OS</span></div>
       </div>
     </div>
   </div>
@@ -402,30 +394,50 @@ OBJ    → Output</pre>
         <div>
           <div class="proj-meta"><span class="proj-num">06</span></div>
           <div class="proj-title">E-Commerce Web Application</div>
-          <div class="proj-desc">Full-stack e-commerce platform with product listings, shopping cart, and order management. RESTful API backend with Python/Flask, dynamic frontend with HTML/CSS/JavaScript, and MySQL for data persistence.</div>
-          <div class="proj-stack"><span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">MySQL</span><span class="ptag">REST API</span><span class="ptag">JavaScript</span></div>
+          <div class="proj-desc">Comprehensive, production-ready e-commerce system built with C# .NET 8, demonstrating advanced OOP principles and design patterns (Repository, Strategy, Decorator, Factory, Singleton, Dependency Injection). Designed for enterprise-level applications with clean layered architecture, SOLID principles, and DTO patterns throughout.</div>
+          <div class="proj-stack"><span class="ptag">C#</span><span class="ptag">.NET 8</span><span class="ptag">OOP</span><span class="ptag">Design Patterns</span><span class="ptag">REST API</span><span class="ptag">Clean Architecture</span><span class="ptag">SOLID</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/moataz440/E-Commerce-System" target="_blank" class="plink">GitHub<svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
         </div>
         <div class="proj-arr">→</div>
       </div>
 
-      <!-- 07 3D Printer -->
+      <!-- 07 CipherLens -->
       <div class="proj">
         <div>
           <div class="proj-meta"><span class="proj-num">07</span></div>
-          <div class="proj-title">3D Printer Interface</div>
-          <div class="proj-desc">Control interface for a 3D printer with firmware communication and real-time status monitoring. Bridges embedded hardware with a Python software layer for live parameter control and feedback via serial communication.</div>
-          <div class="proj-stack"><span class="ptag">Arduino</span><span class="ptag">Python</span><span class="ptag">Embedded Systems</span><span class="ptag">Serial Comm</span></div>
+          <div class="proj-title">CipherLens — Encrypted Image Steganography Tool</div>
+          <div class="proj-desc">Desktop/web tool for hiding AES-256-GCM encrypted messages inside images using LSB steganography, with PBKDF2-HMAC-SHA256 key derivation. Supports XOR-based lightweight encryption; strips EXIF metadata on processed images to prevent privacy leakage. Flask API backend with drag-and-drop frontend, file validation, capacity checking, and detailed error reporting.</div>
+          <div class="proj-stack"><span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">PyCryptodome</span><span class="ptag">Pillow</span><span class="ptag">LSB Steganography</span><span class="ptag">AES-256-GCM</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/moataz440/Image-Encryption" target="_blank" class="plink">GitHub<svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
         </div>
         <div class="proj-arr">→</div>
       </div>
 
-      <!-- 08 Weather -->
+      <!-- 08 Rotten Tomatoes -->
       <div class="proj">
         <div>
           <div class="proj-meta"><span class="proj-num">08</span></div>
-          <div class="proj-title">Weather Application</div>
-          <div class="proj-desc">Real-time weather app consuming a live REST API with dynamic DOM updates, responsive layout, and graceful error handling.</div>
-          <div class="proj-stack"><span class="ptag">JavaScript</span><span class="ptag">HTML5</span><span class="ptag">CSS3</span><span class="ptag">REST API</span></div>
+          <div class="proj-title">Rotten Tomatoes Analytics</div>
+          <div class="proj-desc">Exploratory data analysis on a large Rotten Tomatoes dataset. Cleaned and preprocessed data, then produced Pearson correlation matrices, pairplots, and heatmaps to surface trends in critic vs. audience scoring. Derived actionable insights on genre performance, score distributions, and rating drift over decades using statistical visualization.</div>
+          <div class="proj-stack"><span class="ptag">Python</span><span class="ptag">pandas</span><span class="ptag">NumPy</span><span class="ptag">Matplotlib</span><span class="ptag">Seaborn</span><span class="ptag">EDA</span></div>
+          <div class="proj-links">
+            <a href="https://github.com/moataz440/Rotten-Tomatoes-Analytics" target="_blank" class="plink">GitHub<svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+          </div>
+        </div>
+        <div class="proj-arr">→</div>
+      </div>
+
+      <!-- 09 Weather Station IoT -->
+      <div class="proj">
+        <div>
+          <div class="proj-meta"><span class="proj-num">09</span></div>
+          <div class="proj-title">Weather Station IoT</div>
+          <div class="proj-desc">End-to-end IoT weather station: ESP32 reads temperature/humidity from a DHT22 sensor and displays live readings on an I2C LCD, then publishes data over MQTT (TLS) to HiveMQ Cloud. Python subscriber consumes the MQTT stream, logs readings, and plots real-time charts. GPIO-programmed alert thresholds trigger onboard indicators. Demonstrates full pub/sub architecture across embedded, cloud broker, and desktop analytics layers.</div>
+          <div class="proj-stack"><span class="ptag">ESP32</span><span class="ptag">Arduino IDE</span><span class="ptag">MQTT</span><span class="ptag">HiveMQ Cloud</span><span class="ptag">Python</span><span class="ptag">paho-mqtt</span><span class="ptag">DHT22</span><span class="ptag">I2C LCD</span></div>
           <div class="proj-links">
             <a href="https://github.com/moataz440/Weather-APP" target="_blank" class="plink">GitHub<svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
           </div>
@@ -433,25 +445,22 @@ OBJ    → Output</pre>
         <div class="proj-arr">→</div>
       </div>
 
+      <!-- 10 3D Printer -->
+      <div class="proj">
+        <div>
+          <div class="proj-meta"><span class="proj-num">10</span><span class="proj-badge">Hardware</span></div>
+          <div class="proj-title">3D Printer</div>
+          <div class="proj-desc">Built and programmed a 3D printer involving firmware-level Arduino control, Python scripting for host-side communication, custom circuit design, and electronics assembly. Covers the full hardware-software integration stack from motor driver circuits to serial command interfaces.</div>
+          <div class="proj-stack"><span class="ptag">Arduino</span><span class="ptag">Python</span><span class="ptag">Electronics</span><span class="ptag">Circuits</span><span class="ptag">Embedded Systems</span></div>
+          <div class="proj-meta" style="margin-top:14px;margin-bottom:0"><span class="proj-yr" style="font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em">2025</span></div>
+        </div>
+        <div class="proj-arr">→</div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- CERTS -->
-<section id="certs">
-  <div class="wrap">
-    <div class="lbl r d1">Credentials</div>
-    <h2 class="sec-title r d2">Certifications</h2>
-    <div class="certs-grid r d3">
-      <div class="cert"><div class="cert-info"><div class="cert-name">CS50x: Introduction to Computer Science</div><div class="cert-org">Harvard University / edX</div></div><div class="cert-yr">2022</div></div>
-      <div class="cert"><div class="cert-info"><div class="cert-name">CS50 Web: Python & JavaScript</div><div class="cert-org">Harvard University / edX</div></div><div class="cert-yr">2022</div></div>
-      <div class="cert"><div class="cert-info"><div class="cert-name">CS50 SQL: Databases with SQL</div><div class="cert-org">Harvard University / edX</div></div><div class="cert-yr">2023</div></div>
-      <div class="cert"><div class="cert-info"><div class="cert-name">Full Stack Developer Professional Certificate</div><div class="cert-org">IBM / Coursera</div></div><div class="cert-yr">2023</div></div>
-      <div class="cert"><div class="cert-info"><div class="cert-name">HTML, CSS & JavaScript Specialization</div><div class="cert-org">Johns Hopkins University / Coursera</div></div><div class="cert-yr">2022</div></div>
-      <div class="cert"><div class="cert-info"><div class="cert-name">CCNA: Introduction to Networks</div><div class="cert-org">Cisco Networking Academy</div></div><div class="cert-yr">2024</div></div>
-    </div>
-  </div>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
