@@ -485,7 +485,7 @@ function applyTilt(card, e) {
 (function initForm() {
   const EMAILJS_PUBLIC_KEY  = 'cN3OUTgbeKQZqUQaK';
   const EMAILJS_SERVICE_ID  = 'service_id3l9qj';
-  const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+  const EMAILJS_TEMPLATE_ID = 'template_x2kbauc';
 
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
