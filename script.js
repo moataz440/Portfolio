@@ -10,7 +10,7 @@ const PROJECTS = [
     desc: 'A complete C++ compiler built in Python covering the full pipeline: preprocessing, lexical analysis, LR(1) parsing, semantic analysis, three-address code generation, pseudo-assembly, and HTE object code. Executed by a tree-walking AST interpreter with a custom CustomTkinter GUI visualizing every phase — tokens, AST, parse tree, symbol table, TAC, and assembly. Full error reporting at every stage with precise line/column info.',
     tags: ['Python', 'LR(1) Parsing', 'AST Interpretation', 'CustomTkinter', 'Compiler Design'],
     cats: ['systems'],
-    github: 'https://github.com/moataz440/LRC-C-Compiler-with-AST-Interpreter-',
+    github: 'https://github.com/moataz440/LRC-C-Compiler',
     demo: '#',
     featured: true
   },
@@ -70,7 +70,7 @@ const PROJECTS = [
     desc: 'Real-time P2P collaborative whiteboard platform with WebSocket architecture, multi-user simultaneous drawing, React frontend, Node.js backend, and a Java P2P connectivity layer.',
     tags: ['React', 'Node.js', 'WebSockets', 'Java', 'Canvas API'],
     cats: ['web'],
-    github: 'https://github.com/moataz440/Collabrative-White-Board',
+    github: 'https://github.com/moataz440/Collaborative-Whiteboard',
     demo: '#',
     featured: false
   },
@@ -120,7 +120,7 @@ const PROJECTS = [
     desc: 'Web-based examination platform with question banks, timed assessments, auto-grading, result analytics, and an admin management panel. Built with PHP and MySQL with session-based authentication.',
     tags: ['PHP', 'MySQL', 'JavaScript', 'HTML/CSS', 'Sessions'],
     cats: ['web'],
-    github: '#',
+    github: 'https://github.com/moataz440/Online-Examination-System',
     demo: '#',
     featured: false
   },
